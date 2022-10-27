@@ -15,10 +15,11 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 function keysInObject(obj) {
   // Your code here
   //hello;
+  //Hello Randy
 }
 
-let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
-let foods = {apple: 'tart', lemon: 'sour', mango: 'sweet'}
+let animals = { dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo' }
+let foods = { apple: 'tart', lemon: 'sour', mango: 'sweet' }
 keysInObject(animals); // => ["dog", "cat", "bison"]
 keysInObject(foods); // => ["apple", "lemon", "mango"]
 
