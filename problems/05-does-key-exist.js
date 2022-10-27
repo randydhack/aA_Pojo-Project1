@@ -25,6 +25,12 @@ function doesKeyExist(obj, key) {
   } else {
     return false;
   }
+
+  // if (obj[key] !== undefined) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
