@@ -13,6 +13,7 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 ***********************************************************************/
 
 function keysInObject(obj) {
+
   let arr = [];
 
   for (let key in obj) {
@@ -21,7 +22,10 @@ function keysInObject(obj) {
   return arr;
 }
 
-let animals = { dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo' }
+let animals = {
+  dog: 'Wolfie',
+  cat: 'Jet',
+  bison: 'Bilbo' }
 let foods = { apple: 'tart', lemon: 'sour', mango: 'sweet' }
 keysInObject(animals); // => ["dog", "cat", "bison"]
 keysInObject(foods); // => ["apple", "lemon", "mango"]

@@ -14,9 +14,21 @@ valuesInObject(animals); // => ["Wolfie", "Jet", "Bilbo"]
 valuesInObject(foods); // => ["tart", "sour", "sweet"]
 ***********************************************************************/
 
+// create an empty arr, then return the arr with the values of the object
+// write a for in loop using obj values
+// push values into the arr
+// then return the result of arr
+
 function valuesInObject(obj) {
   // Your code here
 
+  const arr = [];
+
+  for (let key in obj) {
+    let values = obj[key];
+    arr.push(values);
+  }
+  return arr;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
