@@ -9,7 +9,8 @@ Examples:
 let objArray = [
   { name: "Rupert" },
   { age: 42 },
-  { planet: "Earth", system: "Milky Way" }
+  { planet: "Earth",
+  system: "Milky Way" }
 ];
 
 keyInObjectArray(objArray, 'planet'); // => true
@@ -20,8 +21,13 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  // Your code here
-
+  for (let i = objArray; i < objArray.length; i++) {
+    if (objArray[0] === keyString) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 }
 
