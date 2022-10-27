@@ -13,17 +13,27 @@ let obj1 = {str: "hello"}
 setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 ***********************************************************************/
 
+/*
+
+1. creat a new var called obj that takes in a obj called string then inital to value
+2. return the var
+
+
+*/
+
+
 function setKeyInObject(obj, string, value) {
   // Your code here
+  obj[string] = value;
 
-
+  return obj;
 
 }
 
 // let obj = {}
 // setKeyInObject(obj, "apple", "yum"); // => {apple: "yum"}
 
-let obj1 = {str: "hello"}
+let obj1 = { str: "hello" }
 setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
