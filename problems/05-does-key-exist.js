@@ -10,8 +10,20 @@ doesKeyExist(obj1, 'course'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
+/*
+
+0. make a conditional
+1. check if the obj key is not undefined
+2. return true if it's not undefined
+
+*/
+
 function doesKeyExist(obj, key) {
-  // Your code here
+  if (obj[key] === undefined) {
+    return false;
+  } else {
+    return true;
+  }
 
 }
 
