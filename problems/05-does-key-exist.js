@@ -19,12 +19,12 @@ doesKeyExist(obj1, 'name'); // => false
 */
 
 function doesKeyExist(obj, key) {
-  if (obj[key] === undefined) {
-    return false;
-  } else {
-    return true;
-  }
 
+  if (obj[key] !== undefined) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
