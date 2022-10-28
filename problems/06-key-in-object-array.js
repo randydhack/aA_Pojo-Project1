@@ -33,13 +33,15 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  for (let i = 0; i < objArray.length; i++) {
-    if (objArray[i] !== keyString) {
-      return false;
-    } else {
+  // Your code here
+
+  for (let key in objArray) {
+
+    if (objArray[key][keyString] !== undefined) { // arr[obj][key]
       return true;
     }
   }
+  return false;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

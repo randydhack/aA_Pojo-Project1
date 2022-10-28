@@ -5,22 +5,40 @@ values of the object.
 
 **Hint**: Use spread syntax to spread out elements into an array!
 
-
 Examples:
-let object1 = {name: 'Rupert', age: 5, speak: 'Meow'};
+let object1 = {
+  name: 'Rupert',
+  age: 5,
+  speak: 'Meow'};
 breakDownObj(object1); // => [ 'name', 'age', 'speak', 'Rupert', 5, 'Meow' ]
 
-let object2 = {location: 'NY', borough: 'Brooklyn'};
+let object2 = {
+  location: 'NY',
+  borough: 'Brooklyn'
+};
+
 breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
+
+1. create an empty arr variable
+2. write a for in loop key in obj
+3. pushing the key into the arr
+4. return ...arr1, ...arr2
+
 ***********************************************************************/
 
-1. let obj =
+function breakDownObj(obj) {
 
-  function breakDownObj(obj) {
-    let arr = [];
+  let arr = [];
+  let value = [];
 
-    for ()
+  for (let key in obj) {
+
+    arr.push(key);
+    value.push(obj[key]);
   }
+
+  return [...arr, ...value];
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = breakDownObj;
