@@ -37,7 +37,7 @@ function breakDownObj(obj) {
     value.push(obj[key]);
   }
 
-  return [arr, ...value];
+  return [...arr, ...value];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

@@ -7,10 +7,18 @@ and the sum of the total points for the game as their value.
 
 
 Example 1:
-let ppl = [{name: "Anthony", score: 10},
-            {name: "Fred", score : 10},
-            {name: "Anthony", score: -8},
-            {name: "Winnie", score: 12}];
+let ppl = [{
+  name: "Anthony", score: 10
+},
+{
+  name: "Fred", score : 10
+},
+{
+  name: "Anthony", score: -8
+},
+{
+  name: "Winnie", score: 12
+}];
 
 console.log(countScores(ppl)); //=> { Anthony: 2, Fred: 10, Winnie: 12 }
 
@@ -28,7 +36,22 @@ console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
 
 function countScores(people) {
-  // Your code here
+
+  let result = {};
+
+  for (let i = 0; i < people.length; i++) {
+
+    let personObj = people[i];
+    let name = personObj.name;
+    let score = personObj.score;
+
+    if (result[name]) {
+      result[name] += score;
+    } else {
+      result[name] = score;
+    }
+  }
+  return result;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
