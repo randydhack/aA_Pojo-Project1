@@ -30,6 +30,8 @@ appleCounter(obj3); // => 3
 function appleCounter(appleObj) {
   // Your code here
 
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
