@@ -4,13 +4,18 @@ objects as the first parameter and a string as the second. The `keyInObjectArray
 will return `true` if any of the objects contains the `keyString` as a key within them, and
 `false` if not.
 
-
 Examples:
 let objArray = [
-  { name: "Rupert" },
-  { age: 42 },
-  { planet: "Earth",
-  system: "Milky Way" }
+  {
+    name: "Rupert"
+  },
+  {
+    age: 42
+  },
+  {
+    planet: "Earth",
+    system: "Milky Way"
+  }
 ];
 
 keyInObjectArray(objArray, 'planet'); // => true
@@ -18,17 +23,23 @@ keyInObjectArray(objArray, 'age'); // => true
 keyInObjectArray(objArray, 'food'); // => false
 keyInObjectArray(objArray, 'animal'); // => false
 
+/* Ty
+1. make a for loop to iterate through the array
+2.
+
+
+
+
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  for (let i = objArray; i < objArray.length; i++) {
-    if (objArray[0] === keyString) {
-      return true;
-    } else {
+  for (let i = 0; i < objArray.length; i++) {
+    if (objArray[i] !== keyString) {
       return false;
+    } else {
+      return true;
     }
   }
-
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
