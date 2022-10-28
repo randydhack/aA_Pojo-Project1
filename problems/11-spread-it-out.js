@@ -13,8 +13,9 @@ spreadItOut(["apple", "banana"], [1,2,3]); // => ["apple", "banana", 1, 2, 3];
 function spreadItOut(array1, array2) {
   // Your code here
 
-
+  return [...array1,...array2];
 }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = spreadItOut;
