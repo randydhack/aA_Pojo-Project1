@@ -19,25 +19,21 @@ let object2 = {
 
 breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
 
-1. create an empty arr variable
-2. write a for in loop key in obj
-3. pushing the key into the arr
-4. return ...arr1, ...arr2
 
 ***********************************************************************/
 
 function breakDownObj(obj) {
 
-  let arr = [];
-  let value = [];
-
+  let arr1 = [];
+  let arr2= [];
   for (let key in obj) {
+    let value = obj[key];
 
-    arr.push(key);
-    value.push(obj[key]);
+    arr1.push(key);
+    arr2.push(value);
   }
 
-  return [...arr, ...value];
+  return [...arr1, ...arr2];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

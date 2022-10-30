@@ -17,20 +17,17 @@ console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple:
 
 function arrayConverter(array) {
   // Your code here
-
   let count = {};
 
-  for (let i = 0; i < array.length; i++) {
-    let word = array[i]
+  array.forEach(element => {
 
-    if (count[word] !== undefined) { // if word is contained in count, increment count, else add word into count;
-
-      count[word]++; // apple: 2
+    if (count[element] !== undefined) {
+      count[element]++;
     } else {
-
-      count[word] = 1; // apple: 1
+      count[element] = 1;
     }
-  }
+  });
+
   return count;
 }
 

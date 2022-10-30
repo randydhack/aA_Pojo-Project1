@@ -17,14 +17,15 @@ function stringConverter(string) {
   let count = {};
 
   for (let i = 0; i < string.length; i++) {
-    let char = string[i];
+    let subStr = string[i];
 
-    if (char in count) {
-      count[char]++;
+    if (count[subStr] !== undefined) {
+      count[subStr]++;
     } else {
-      count[char] = 1;
+      count[subStr] = 1;
     }
   }
+
   return count;
 }
 

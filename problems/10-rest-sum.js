@@ -12,14 +12,9 @@ restSum(0); // => 0
 function restSum(...otherNums) {
   // Your code here
 
-  let arr = [...otherNums];
-  let sum = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-
-  return sum;
+  return otherNums.reduce((prev,curr) => {
+    return prev + curr
+  });
 }
 
 

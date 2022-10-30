@@ -23,25 +23,26 @@ keyInObjectArray(objArray, 'age'); // => true
 keyInObjectArray(objArray, 'food'); // => false
 keyInObjectArray(objArray, 'animal'); // => false
 
-/* Ty
-1. make a for loop to iterate through the array
-2.
-
-
-
-
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  // Your code here
 
-  for (let key in objArray) {
+  for (let i = 0; i < objArray.length; i++) {
 
-    if (objArray[key][keyString] !== undefined) { // arr[obj][key]
+    let subArr = objArray[i]
+
+    // for (key in subArr) {
+    // let value = subArr[key]
+    // console.log(value)
+    // }
+
+    if (subArr[keyString] !== undefined) {
+
       return true;
     }
   }
   return false;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
