@@ -45,12 +45,11 @@ function countScores(people) {
     let score = obj.score;
 
     if (res[name] !== undefined) {
-      res[name] += score;
+      res[name] += score; // or just count[obj.name] += obj.score;
     } else {
-      res[name] = score;
+      res[name] = score; // or count[obj.name] = obj.score;
     }
   }
-
   return res;
 }
 

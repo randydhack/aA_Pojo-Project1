@@ -27,6 +27,10 @@ function doesKeyExist(obj, key) {
     return true;
   }
   return false;
+
+  // OR
+
+  // return key in obj;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

@@ -34,6 +34,12 @@ function breakDownObj(obj) {
   }
 
   return [...arr1, ...arr2];
+
+  // OR
+  // let keys = Object.keys(obj);
+  // let values = Object.values(obj);
+
+  // return [...keys, ...values];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

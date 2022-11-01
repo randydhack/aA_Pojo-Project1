@@ -19,7 +19,7 @@ function stringConverter(string) {
   for (let i = 0; i < string.length; i++) {
     let subStr = string[i];
 
-    if (count[subStr] !== undefined) {
+    if (count[subStr] !== undefined) { // or (subString in count)
       count[subStr]++;
     } else {
       count[subStr] = 1;

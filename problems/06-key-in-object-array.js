@@ -28,21 +28,12 @@ keyInObjectArray(objArray, 'animal'); // => false
 function keyInObjectArray(objArray, keyString) {
 
   for (let i = 0; i < objArray.length; i++) {
-
     let subArr = objArray[i]
-
-    // for (key in subArr) {
-    // let value = subArr[key]
-    // console.log(value)
-    // }
-
-    if (subArr[keyString] !== undefined) {
-
+    if (subArr[keyString] !== undefined) { // or (keyString in subArr) does the same
       return true;
     }
   }
   return false;
-
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

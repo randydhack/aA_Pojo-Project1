@@ -26,6 +26,8 @@ function valuePair(obj1, obj2, key) {
   let value2 = obj2[key];
 
   return [value1, value2];
+
+  // or return [obj1[key],obj2[key]];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
